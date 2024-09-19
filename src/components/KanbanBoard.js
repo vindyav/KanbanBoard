@@ -4,6 +4,8 @@ import FilterOptions from './FilterOptions';
 import KanbanColumn from './KanbanColumn';
 import { groupTickets } from '../utils/helpers';
 import './KanbanBoard.css';
+import DisplayIcon from '../icons_FEtask/Display.svg';
+import Down from '../icons_FEtask/down.svg';
 
 const KanbanBoard = () => {
   const [tickets, setTickets] = useState([]);
@@ -62,9 +64,12 @@ const KanbanBoard = () => {
     setShowFilters(!showFilters);
   };
 
+  
+
   return (
     <div className="kanban-board">
-      <button onClick={toggleFilters}>Display</button> {/* Display Button */}
+      <div className='header'>
+      <span><img src={DisplayIcon}/><button onClick={toggleFilters}>Display</button> <img src={Down}/> </span> </div>
       <FilterOptions 
         grouping={grouping} 
         onGroupingChange={handleGroupingChange} 

@@ -8,6 +8,8 @@
   width: 100%;
   flex-wrap: nowrap;
   overflow-x: hidden;
+  background: #f4f4f4;
+  margin-top: 10px;
 }
 
 .status-display {
@@ -21,4 +23,14 @@
 .kanban-board button {
   text-align: left;
   width: fit-content;
+}
+.header span{
+  display: flex;
+    align-items: center;
+    border: 3px solid #e7e6e6;
+}
+.header {
+  width: 90px;
+  display: flex;
+  justify-content: center;
 }

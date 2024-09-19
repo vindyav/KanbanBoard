@@ -1,7 +1,9 @@
 import React from 'react';
 import './FilterOptions.css';
 
+
 const FilterOptions = ({ grouping, onGroupingChange, sorting, onSortingChange, show }) => {
+  if (!show) return null
   return (
     <div className="filter-options-container">
       <div className={`filter-options ${show ? 'show-filter-options' : ''}`}>
