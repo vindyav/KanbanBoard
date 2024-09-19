@@ -1,0 +1,28 @@
+.kanban-column {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .kanban-column h2 {
+    text-align: center;
+  }
+  .column-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+  }
+.col-head-left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+.col-head-left h4{
+  padding: 0;
+  margin: 0;
+  
+}
+  
